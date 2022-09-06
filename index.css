@@ -1,0 +1,195 @@
+
+
+/* NAVBAR */
+
+nav {
+  background-color: #ffc107;
+  font-size: 23px;
+}
+
+header {
+
+  margin-bottom: 99px;
+}
+
+.navbar-logo {
+  padding-left: 30px;
+}
+
+.nav-link {
+  margin-left: 100px;
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  background-color: #623b5a;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.nav-link:hover:after {
+  width: 100%;
+  color: white;
+}
+
+
+/* CONTENIDO */
+
+.video {
+
+padding-left: 100px;
+padding-top: 20px;
+
+
+}
+
+
+.trades { 
+
+display: flex;
+justify-content: space-between;
+background-color: #623b5a;
+margin-top: 30px;
+padding-bottom: 10px;
+
+}
+
+
+.sect {
+  width: 100%;
+  min-height: 500px;
+}
+#sect1,
+#sect3 {
+  background-color: #3333337d;
+  color: #fff;
+}
+#sect2 {
+  background-color: #3333337d;
+  color: white;
+}
+video {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height:100%;
+  z-index: -1;
+}
+h1 {
+  margin: 0;
+  padding-top: 3rem;
+  padding-left: 2rem;
+}
+h2 {
+  margin: 0;
+  padding-top: 3rem;
+  padding-left: 1rem;
+  color: #f6f8ff;
+  font-style: italic;
+  font-weight: bold;
+}
+
+h2:hover {
+
+color: #ffc107;
+
+}
+
+
+.card-title  {
+
+font-size: larger;
+font-style: italic;
+font-weight: bold;
+
+}
+
+.card-text  {
+
+font-style: italic;
+
+}
+
+
+
+
+.wanted {
+
+  color: #623b5a;
+  font-weight: bolder;
+  font-size: 3em;
+  padding-bottom: 50px;
+  padding-top: 1px;
+  
+}
+
+
+
+ 
+
+.section1 {
+
+  margin-top: 120px;
+}
+
+.journey {
+  font-style: italic;
+  font-weight: bold;
+  color: #f6f8ff;
+  font-size: 3.5em;
+}
+
+.journey:hover {
+  color: #ffc107;
+  position: relative;
+
+}
+
+.potencial {
+
+  font-style: italic;
+  font-weight: bold;
+  color: #f6f8ff;
+
+}
+
+.skills {
+
+  font-style: italic;
+  font-weight: bold;
+  color: #f6f8ff;
+
+}
+
+
+/* FOOTER */
+
+.row{
+  background-color: #ffc107; 
+  font-size: 20px; 
+font-style:italic;
+font-weight: lighter;
+  
+   
+}
+
+li:hover {
+  color: #f6f8ff;
+}
+
+
+  
+
+
+
+
+
+
+
+/*# sourceMappingURL=Style.css.map */

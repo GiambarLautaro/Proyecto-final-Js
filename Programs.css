@@ -1,0 +1,101 @@
+
+nav {
+    background-color: #ffc107; 
+    font-size: 23px; 
+    
+     
+}
+
+
+
+.navbar-logo {
+    padding-left: 30px;
+    
+}
+
+
+
+
+.nav-link {
+
+    margin-left: 100px;
+    position: relative;
+    text-decoration: none;
+    
+     
+}
+
+
+.nav-link::after {
+     
+    content: "";
+    position: absolute;
+    background-color: #623b5a;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+transition: 0.3s;
+
+
+}
+
+
+
+.nav-link:hover:after {
+    width: 100%;
+    color: white;
+}
+
+/* CONTENIDO */
+
+.card-bodyprograms {
+
+    margin-top: 100px;
+    background: url("imaginesforex/graficoclaro.jpeg") no-repeat center;
+ 
+}
+
+.prices {
+
+    margin-top: 30px;
+}
+
+.phrase {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+   .programsnames{
+
+     font-weight: bold;
+     font-style: italic;
+     
+}
+
+
+/* FOOTER */
+
+
+.row{
+    background-color: #ffc107; 
+    font-size: 20px; 
+	font-style:italic;
+	font-weight: lighter;
+	
+    
+     
+}
+
+
+li {
+    color: black;
+}
+
+li:hover {
+    color: #f6f8ff;
+}
+
+
