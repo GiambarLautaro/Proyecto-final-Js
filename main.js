@@ -1,3 +1,14 @@
+//INDEX
+
+//TESTIMONIALS AND RESOURCES
+
+ScrollReveal().reveal(".carousel-inner");
+ScrollReveal().reveal(".testimonio1", { delay: 300 });
+ScrollReveal().reveal(".testimonio2", { delay: 300 });
+ScrollReveal().reveal(".testimonio3", { delay: 300 });
+
+// PROGRAMS
+
 function send() {
   Swal.fire({
     position: "top-end",
@@ -32,3 +43,57 @@ function checkout() {
     }
   });
 }
+
+//ABOUT US
+
+ScrollReveal().reveal(".caja");
+ScrollReveal().reveal(".img-fluid", { delay: 300 });
+
+// HELP
+
+document.getElementsByClassName("contact-box");
+
+function checkform() {
+  const fullName = document.getElementById("fullName").value;
+  const phone = document.getElementById("phone").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("textarea").value;
+  console.log(fullName, phone, email, message);
+
+  document.getElementById("resultado").innerHTML =
+    "Thank you," +
+    " " +
+    fullName +
+    " " +
+    " The information Regarding your Message will be sent to " +
+    email +
+    " " +
+    "soon.";
+
+  Swal.fire({
+    position: "top-end",
+    icon: "success",
+    title: "Your message has been sent ",
+    showConfirmButton: false,
+    timer: 1500,
+  });
+}
+
+// function send() {
+//   Swal.fire({
+//     position: "top-end",
+//     icon: "success",
+//     title: "Your message has been sent ",
+//     showConfirmButton: false,
+//     timer: 1500,
+//   });
+// }
+
+// SWITCH DARK MODE
+
+const btnSwitch = document.querySelector("#switch");
+
+btnSwitch.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+  btnSwitch.classList.toggle("active");
+});

@@ -1,8 +1,18 @@
 /* NAVBAR */
+body.dark {
+  background-color: rgb(3, 3, 59);
+  transition: 1.2s ease all;
+}
+body .active {
+  transition: 1.2s ease all;
+}
 
 nav {
   background-color: #ffc107;
   font-size: 23px;
+}
+body.dark nav {
+  background-color: rgb(1, 1, 29);
 }
 
 header {
@@ -19,15 +29,22 @@ header {
   text-decoration: none;
 }
 
+body.dark #aDark {
+  color: white;
+}
+
 .nav-link::after {
   content: "";
   position: absolute;
-  background-color: #623b5a;
+  background-color: #560b47;
   height: 3px;
   width: 0%;
   left: 0;
   bottom: -10px;
   transition: 0.3s;
+}
+body.dark .nav-link::after {
+  background-color: lightblue;
 }
 
 .nav-link:hover:after {
@@ -36,7 +53,6 @@ header {
 }
 
 /* CONTENIDO */
-
 .video {
   padding-left: 100px;
   padding-top: 20px;
@@ -45,24 +61,31 @@ header {
 .trades {
   display: flex;
   justify-content: space-between;
-  background-color: #623b5a;
+  background-color: #560b47;
   margin-top: 30px;
   padding-bottom: 10px;
+}
+body.dark .trades {
+  background-color: rgb(1, 1, 29);
+  transition: 0.5s ease all;
 }
 
 .sect {
   width: 100%;
   min-height: 500px;
 }
+
 #sect1,
 #sect3 {
-  background-color: #3333337d;
+  background-color: rgba(51, 51, 51, 0.4901960784);
   color: #fff;
 }
+
 #sect2 {
-  background-color: #3333337d;
+  background-color: rgba(51, 51, 51, 0.4901960784);
   color: white;
 }
+
 video {
   position: fixed;
   left: 0;
@@ -70,11 +93,13 @@ video {
   height: 100%;
   z-index: -1;
 }
+
 h1 {
   margin: 0;
   padding-top: 3rem;
   padding-left: 2rem;
 }
+
 h2 {
   margin: 0;
   padding-top: 3rem;
@@ -87,6 +112,23 @@ h2 {
 h2:hover {
   color: #ffc107;
 }
+body.dark h2:hover {
+  color: lightblue;
+}
+
+.card-body {
+  background-color: #ffc107;
+}
+body.dark .card-body {
+  background-color: rgb(1, 1, 29);
+}
+
+#clickformore {
+  background-color: #ffc107;
+}
+body.dark #clickformore {
+  background-color: lightblue;
+}
 
 .card-title {
   font-size: larger;
@@ -96,14 +138,21 @@ h2:hover {
 
 .card-text {
   font-style: italic;
+  color: black;
+}
+body.dark .card-text {
+  color: #f6f8ff;
 }
 
 .wanted {
-  color: #623b5a;
+  color: #560b47;
   font-weight: bolder;
   font-size: 3em;
   padding-bottom: 50px;
   padding-top: 1px;
+}
+body.dark .wanted {
+  color: lightblue;
 }
 
 .section1 {
@@ -135,16 +184,64 @@ h2:hover {
 }
 
 /* FOOTER */
-
 .row {
   background-color: #ffc107;
   font-size: 20px;
   font-style: italic;
   font-weight: lighter;
 }
+body.dark .row {
+  background-color: rgb(1, 1, 29);
+  color: #f6f8ff;
+}
 
 li:hover {
   color: #f6f8ff;
 }
+body.dark li:hover {
+  color: lightblue;
+}
 
-/*# sourceMappingURL=Style.css.map */
+/* SWITCH DARK MODE */
+.switch {
+  margin-left: 95px;
+  background-color: #560b47;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+}
+.switch::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #f6f8ff;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  transition: 0.3s ease all;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.switch.active {
+  background: lightblue;
+  color: black;
+}
+.switch.active::after {
+  right: 0;
+  left: unset;
+}
+.switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: #f6f8ff;
+}
+
+/*# sourceMappingURL=Style.css.map *//*# sourceMappingURL=index.css.map */

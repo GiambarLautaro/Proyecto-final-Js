@@ -1,268 +1,248 @@
-@mixin estilo-letra {
-
-    font-style: italic;
-    font-weight: bold;
-    padding: 5px 0 10px 15px;
-    
+/* NAVBAR */
+body {
+  &.dark {
+    background-color: rgb(3, 3, 59);
+    transition: 1.2s ease all;
+  }
+  .active {
+    transition: 1.2s ease all;
+  }
 }
-
-
-// NAVBAR
-
-
 nav {
-    background-color: #ffc107; 
-    font-size: 23px; 
-    
-     
+  background-color: #ffc107;
+  font-size: 23px;
+  body.dark & {
+    background-color: rgb(1, 1, 29);
+  }
 }
 
-nav:hover {
-    color: #f6f8ff;
+header {
+  margin-bottom: 99px;
 }
-
-
 
 .navbar-logo {
-    padding-left: 30px;
-    
+  padding-left: 30px;
 }
-
-
-
 
 .nav-link {
-
-    margin-left: 100px;
-    position: relative;
-    text-decoration: none;
-    
-     
+  margin-left: 100px;
+  position: relative;
+  text-decoration: none;
 }
 
+#aDark {
+  body.dark & {
+    color: white;
+  }
+}
 
 .nav-link::after {
-     
-    content: "";
-    position: absolute;
-    background-color: #623b5a;
-    height: 3px;
-    width: 0%;
-    left: 0;
-    bottom: -10px;
-transition: 0.3s;
-
-
+  content: "";
+  position: absolute;
+  background-color: #560b47;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+  body.dark & {
+    background-color: lightblue;
+  }
 }
-
-
 
 .nav-link:hover:after {
-    width: 100%;
-    color: white;
+  width: 100%;
+  color: white;
 }
 
+/* CONTENIDO */
 
-// TITULOS
+.video {
+  padding-left: 100px;
+  padding-top: 20px;
+}
 
+.trades {
+  display: flex;
+  justify-content: space-between;
+  background-color: #560b47;
+  margin-top: 30px;
+  padding-bottom: 10px;
+  body.dark & {
+    background-color: rgb(1, 1, 29);
+    transition: 0.5s ease all;
+  }
+}
 
- .journey{
+.sect {
+  width: 100%;
+  min-height: 500px;
+}
+#sect1,
+#sect3 {
+  background-color: #3333337d;
+  color: #fff;
+}
+#sect2 {
+  background-color: #3333337d;
+  color: white;
+}
+video {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+}
+h1 {
+  margin: 0;
+  padding-top: 3rem;
+  padding-left: 2rem;
+}
+h2 {
+  margin: 0;
+  padding-top: 3rem;
+  padding-left: 1rem;
+  color: #f6f8ff;
+  font-style: italic;
+  font-weight: bold;
+}
 
-    margin-top: 5em;
-    font-style: italic;
-    font-weight: bold;
+h2:hover {
+  color: #ffc107;
+  body.dark & {
+    color: lightblue;
+  }
+}
+
+.card-body {
+  background-color: #ffc107;
+  body.dark & {
+    background-color: rgb(1, 1, 29);
+  }
+}
+
+#clickformore {
+  background-color: #ffc107;
+  body.dark & {
+    background-color: lightblue;
+  }
+}
+
+.card-title {
+  font-size: larger;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.card-text {
+  font-style: italic;
+  color: black;
+  body.dark & {
     color: #f6f8ff;
-    
+  }
+}
+
+.wanted {
+  color: #560b47;
+  font-weight: bolder;
+  font-size: 3em;
+  padding-bottom: 50px;
+  padding-top: 1px;
+  body.dark & {
+    color: lightblue;
+  }
+}
+
+.section1 {
+  margin-top: 120px;
+}
+
+.journey {
+  font-style: italic;
+  font-weight: bold;
+  color: #f6f8ff;
+  font-size: 3.5em;
 }
 
 .journey:hover {
-color: black;
-position: relative;
-z-index: 2;
-
+  color: #ffc107;
+  position: relative;
 }
 
-
-h2 {
-
-position: relative; 
-z-index: 2;
-@include estilo-letra()
-
+.potencial {
+  font-style: italic;
+  font-weight: bold;
+  color: #f6f8ff;
 }
 
-// VIDEO DE FONDO
-
-
-
-.capa {
-
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: #1c1c1d;
-opacity: 0.5;
-
-
+.skills {
+  font-style: italic;
+  font-weight: bold;
+  color: #f6f8ff;
 }
 
+/* FOOTER */
 
-card-text1 {
-
-color: black;
-
-}
-
-.card-text2 {
-
-    @include estilo-letra()
-}
-
-
-
-
-.card-header {
-
-    @include estilo-letra()
-    
-}
-
-.container-fluid {
-
-    @extend h2
-
-}
-
-.card-footercolor {
-
-    background-color: #798071;
-}
-
-.card-footerleters {
+.row {
+  background-color: #ffc107;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: lighter;
+  body.dark & {
+    background-color: rgb(1, 1, 29);
     color: #f6f8ff;
+  }
 }
 
-.contact {
-    @include estilo-letra()
+li:hover {
+  color: #f6f8ff;
+  body.dark & {
+    color: lightblue;
+  }
 }
 
+/* SWITCH DARK MODE */
 
-
-// Programs
-
-.card-bodyprograms {
-
-    margin-top: 140px;
+.switch {
+  margin-left: 95px;
+  background-color: #560b47;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+  &::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #f6f8ff;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: 0.3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  &.active {
+    background: lightblue;
+    color: black;
+    &::after {
+      right: 0;
+      left: unset;
+    }
+  }
+  span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #f6f8ff;
+  }
 }
 
-.prices {
-
-    margin-top: 50px;
-}
-
-.phrase {
-    font-size: 30px;
-    font-weight: bold;
-}
-
-
-
-   .programsnames{
-
-     font-weight: bold;
-     font-style: italic;
-}
-
-
-
-// Help
-
-.getintouch {
-
-    padding-top: 60px;
-    font-style: italic;
-    margin-top: 100px;
-    font-weight: bold;
-}
-
-
-
-form {
-
-margin-top: 60px;
-
-}
-
-// TestimonialsAndResources
-
-
-
-.container-testimonial {
-background-color: #f6f8ff;
-display: flex;
-justify-content: space-around;
-
-
-}
-
-.card-titulo {
-
-    background-color: #798071;
-}
-
-.testimonio {
-
-    border: 5px solid black;
-    margin: 30px;
-      
-}
-
-
-.testimonio1-img {
-    width: 25rem;
-    height: 42rem;
-}
-
-
-
-
-
-
-.testimonio3-img {
-
-    width: 25rem;
-    height: 42rem;
-}
-
-.card-link {
-
-background-color: #f6f8ff;
-
-}
-
-
-.h5slide {
-
-    font-size: x-large;
-    font-weight: bold;
-
-}
-
-.pslide {
-    font-size: x-large;
-    font-weight: bold;
-   color: #ffc107;
-   
-}
-
-.pslide3 {
-
-    font-size: x-large;
-    font-weight: bold;
-   color: white;
-
-}
-
-
+/*# sourceMappingURL=Style.css.map */
