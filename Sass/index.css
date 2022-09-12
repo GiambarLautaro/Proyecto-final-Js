@@ -15,6 +15,10 @@ body.dark nav {
   background-color: rgb(1, 1, 29);
 }
 
+body.dark #navbartoggler {
+  color: #f6f8ff;
+}
+
 header {
   margin-bottom: 99px;
 }

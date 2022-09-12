@@ -16,6 +16,12 @@ nav {
   }
 }
 
+#navbartoggler {
+  body.dark & {
+    color: #f6f8ff;
+  }
+}
+
 header {
   margin-bottom: 99px;
 }
