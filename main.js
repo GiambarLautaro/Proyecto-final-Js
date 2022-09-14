@@ -79,16 +79,6 @@ function checkform() {
   });
 }
 
-// function send() {
-//   Swal.fire({
-//     position: "top-end",
-//     icon: "success",
-//     title: "Your message has been sent ",
-//     showConfirmButton: false,
-//     timer: 1500,
-//   });
-// }
-
 // SWITCH DARK MODE
 
 const btnSwitch = document.querySelector("#switch");

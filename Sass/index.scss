@@ -1,7 +1,7 @@
 /* NAVBAR */
 body {
   &.dark {
-    background-color: rgb(3, 3, 59);
+    background-color: #1a1e26;
     transition: 1.2s ease all;
   }
   .active {
@@ -12,7 +12,7 @@ nav {
   background-color: #ffc107;
   font-size: 23px;
   body.dark & {
-    background-color: rgb(1, 1, 29);
+    background-color: #1a1e26;
   }
 }
 
@@ -75,7 +75,7 @@ header {
   margin-top: 30px;
   padding-bottom: 10px;
   body.dark & {
-    background-color: rgb(1, 1, 29);
+    background-color: #1a1e26;
     transition: 0.5s ease all;
   }
 }
@@ -124,7 +124,7 @@ h2:hover {
 .card-body {
   background-color: #ffc107;
   body.dark & {
-    background-color: rgb(1, 1, 29);
+    background-color: #1a1e26;
   }
 }
 
@@ -196,7 +196,7 @@ h2:hover {
   font-style: italic;
   font-weight: lighter;
   body.dark & {
-    background-color: rgb(1, 1, 29);
+    background-color: #1a1e26;
     color: #f6f8ff;
   }
 }
@@ -252,3 +252,7 @@ li:hover {
 }
 
 /*# sourceMappingURL=Style.css.map */
+
+//gris tipico de dark modes  #1a1e26z
+//azul body rgb(3, 3, 59)
+//azul resto de la pagina rgb(1,1,29)
