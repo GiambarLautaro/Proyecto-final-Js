@@ -1,7 +1,7 @@
 /* NAVBAR */
 body {
   &.dark {
-    background-color: #1a1e26;
+    background-color: rgb(3, 3, 59);
     transition: 1.2s ease all;
   }
   .active {
@@ -12,7 +12,7 @@ nav {
   background-color: #ffc107;
   font-size: 23px;
   body.dark & {
-    background-color: #1a1e26;
+    background-color: rgb(1, 1, 29);
   }
 }
 
@@ -75,7 +75,7 @@ header {
   margin-top: 30px;
   padding-bottom: 10px;
   body.dark & {
-    background-color: #1a1e26;
+    background-color: rgb(1, 1, 29);
     transition: 0.5s ease all;
   }
 }
@@ -124,7 +124,7 @@ h2:hover {
 .card-body {
   background-color: #ffc107;
   body.dark & {
-    background-color: #1a1e26;
+    background-color: rgb(1, 1, 29);
   }
 }
 
@@ -196,7 +196,7 @@ h2:hover {
   font-style: italic;
   font-weight: lighter;
   body.dark & {
-    background-color: #1a1e26;
+    background-color: rgb(1, 1, 29);
     color: #f6f8ff;
   }
 }
@@ -249,6 +249,17 @@ li:hover {
     background: none;
     color: #f6f8ff;
   }
+}
+
+.inner {
+  font-size: medium;
+  color: #f6f8ff;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.inner:hover {
+  color: #ffc107;
 }
 
 /*# sourceMappingURL=Style.css.map */

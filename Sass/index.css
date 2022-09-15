@@ -1,6 +1,6 @@
 /* NAVBAR */
 body.dark {
-  background-color: #1a1e26;
+  background-color: rgb(3, 3, 59);
   transition: 1.2s ease all;
 }
 body .active {
@@ -12,7 +12,7 @@ nav {
   font-size: 23px;
 }
 body.dark nav {
-  background-color: #1a1e26;
+  background-color: rgb(1, 1, 29);
 }
 
 body.dark #navbartoggler {
@@ -70,7 +70,7 @@ body.dark .nav-link::after {
   padding-bottom: 10px;
 }
 body.dark .trades {
-  background-color: #1a1e26;
+  background-color: rgb(1, 1, 29);
   transition: 0.5s ease all;
 }
 
@@ -124,7 +124,7 @@ body.dark h2:hover {
   background-color: #ffc107;
 }
 body.dark .card-body {
-  background-color: #1a1e26;
+  background-color: rgb(1, 1, 29);
 }
 
 #clickformore {
@@ -195,7 +195,7 @@ body.dark .wanted {
   font-weight: lighter;
 }
 body.dark .row {
-  background-color: #1a1e26;
+  background-color: rgb(1, 1, 29);
   color: #f6f8ff;
 }
 
@@ -246,6 +246,17 @@ body.dark li:hover {
   display: block;
   background: none;
   color: #f6f8ff;
+}
+
+.inner {
+  font-size: medium;
+  color: #f6f8ff;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.inner:hover {
+  color: #ffc107;
 }
 
 /*# sourceMappingURL=Style.css.map *//*# sourceMappingURL=index.css.map */

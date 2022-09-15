@@ -1,5 +1,32 @@
 //INDEX
+function willAdd() {
+  document.getElementById("resultado").innerHTML =
+    "We will add these options soon!" + " " + "Thank You.";
+}
+// SWITCH DARK MODE
 
+const btnSwitch = document.querySelector("#switch");
+
+btnSwitch.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+  btnSwitch.classList.toggle("active");
+
+  //se guarda modo en localstorage.
+  if (document.body.classList.contains("dark")) {
+    localStorage.setItem("darkMode", "true");
+  } else {
+    localStorage.setItem("darkMode", "false");
+  }
+});
+
+//obtenemos el modo actual en el cual nos encontramos
+if (localStorage.getItem("darkMode") === "true") {
+  document.body.classList.add("dark");
+  btnSwitch.classList.add("active");
+} else {
+  document.body.classList.remove("dark");
+  btnSwitch.classList.remove("active");
+}
 //TESTIMONIALS AND RESOURCES
 
 ScrollReveal().reveal(".carousel-inner");
@@ -37,7 +64,6 @@ function checkout() {
       clearInterval(timerInterval);
     },
   }).then((result) => {
-    /* Read more about handling dismissals below */
     if (result.dismiss === Swal.DismissReason.timer) {
       console.log("I was closed by the timer");
     }
@@ -48,58 +74,3 @@ function checkout() {
 
 ScrollReveal().reveal(".caja");
 ScrollReveal().reveal(".img-fluid", { delay: 300 });
-
-// HELP
-
-document.getElementsByClassName("contact-box");
-
-function checkform() {
-  const fullName = document.getElementById("fullName").value;
-  const phone = document.getElementById("phone").value;
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("textarea").value;
-  console.log(fullName, phone, email, message);
-
-  document.getElementById("resultado").innerHTML =
-    "Thank you," +
-    " " +
-    fullName +
-    " " +
-    " The information Regarding your Message will be sent to " +
-    email +
-    " " +
-    "soon.";
-
-  Swal.fire({
-    position: "top-end",
-    icon: "success",
-    title: "Your message has been sent ",
-    showConfirmButton: false,
-    timer: 1500,
-  });
-}
-
-// SWITCH DARK MODE
-
-const btnSwitch = document.querySelector("#switch");
-
-btnSwitch.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-  btnSwitch.classList.toggle("active");
-
-  //se guarda modo en localstorage.
-  if (document.body.classList.contains("dark")) {
-    localStorage.setItem("darkMode", "true");
-  } else {
-    localStorage.setItem("darkMode", "false");
-  }
-});
-
-//obtenemos el modo actual en el cual nos encontramos
-if (localStorage.getItem("darkMode") === "true") {
-  document.body.classList.add("dark");
-  btnSwitch.classList.add("active");
-} else {
-  document.body.classList.remove("dark");
-  btnSwitch.classList.remove("active");
-}
