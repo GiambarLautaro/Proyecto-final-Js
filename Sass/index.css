@@ -1,6 +1,6 @@
 /* NAVBAR */
 body.dark {
-  background-color: rgb(3, 3, 59);
+  background-color: rgb(1, 1, 29);
   transition: 1.2s ease all;
 }
 body .active {
@@ -84,10 +84,19 @@ body.dark .trades {
   background-color: rgba(51, 51, 51, 0.4901960784);
   color: #fff;
 }
+body.dark #sect1,
+body.dark #sect3 {
+  background-color: rgba(12, 12, 12, 0.4901960784);
+  color: #fff;
+}
 
 #sect2 {
   background-color: rgba(51, 51, 51, 0.4901960784);
   color: white;
+}
+body.dark #sect2 {
+  background-color: rgba(12, 12, 12, 0.4901960784);
+  color: #fff;
 }
 
 video {

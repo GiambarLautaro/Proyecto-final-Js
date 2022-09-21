@@ -14,8 +14,8 @@
     />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="Helpalternativo2.css" />
-    <link rel="icon" href="imaginesforex/logo.png" />
+    <link rel="stylesheet" href="../Styles/Helpalternativo2.css" />
+    <link rel="icon" href="../imaginesforex/logo.png" />
   </head>
 
   <body>
@@ -24,7 +24,7 @@
       <nav class="navbar navbar-expand-lg bg-warning fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
-            <img src="imaginesforex/logo.jpeg" class="img-fluid" width="120px" alt="latamfunds">
+            <img src="../imaginesforex/logo.jpeg" class="img-fluid" width="120px" alt="latamfunds">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -54,13 +54,14 @@
     </header>
   
     <div class="container">
-      <form>
+      <form action="https://formsubmit.co/a75fc759e6514ad93df71170b914f661" method="POST">
         <i class="fas fa-paper-plane"></i>
 
         <div class="input-group">
           <label>Full Name</label>
           <input
             type="text"
+            name="name"
             placeholder="Enter your name"
             id="contact-name"
             onkeyup="validateName()"
@@ -72,6 +73,7 @@
           <label>Phone Number.</label>
           <input
             type="tel"
+            name="phone"
             placeholder="+5493510000000"
             id="contact-phone"
             onkeyup="validatePhone()"
@@ -83,6 +85,7 @@
           <label>Email Id</label>
           <input
             type="email"
+            name="email"
             placeholder="Enter Email"
             id="contact-email"
             onkeyup="validateEmail()"
@@ -94,6 +97,7 @@
           <label>Your Message</label>
           <textarea
             rows="5"
+            name="message"
             placeholder="Enter your message"
             id="contact-message"
             onkeyup="validateMessage()"
@@ -115,7 +119,7 @@
 		<div class="row ">
 
 			<a href="#" class="col-3 text-reset text-uppercase d-flex align-items-center">
-				<img src="imaginesforex/logo.jpeg" class="img-fluid" alt="latamfunds">
+				<img src="../imaginesforex/logo.jpeg" class="img-fluid" alt="latamfunds">
 			</a>
 
 
@@ -156,7 +160,7 @@
 	</footer>
 
   </body>
-  <script src="Helpalternativo2.js"></script>
+  <script src="../JavaScript/Helpalternativo2.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
 	integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
 	crossorigin="anonymous"></script>
